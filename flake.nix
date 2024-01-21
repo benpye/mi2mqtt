@@ -13,7 +13,7 @@
       overlay = self: super: {
         ${name} = super.rustPlatform.buildRustPackage {
           inherit name src;
-          nativeBuildInputs = [ super.pkgconfig ];
+          nativeBuildInputs = [ super.pkg-config ];
           buildInputs = [ super.dbus ];
           version = "2023-04-30";
           cargoHash = "sha256-91m6QZI2TbDc/vqtyGww05hGmggIM/gqABP856QKyz0=";
